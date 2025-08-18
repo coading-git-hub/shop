@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
 import { TagIcon } from "@sanity/icons";
+import { Divide } from "lucide-react";
 
 export const categoryType = defineType({
   name: "category",
