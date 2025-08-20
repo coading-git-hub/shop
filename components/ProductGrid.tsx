@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { client } from "@/sanity/lib/client";
 import NoProductAvailable from "./NoProductAvailable";
 import { Loader2 } from "lucide-react";

@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
+// Converted from next.config.ts to next.config.js
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -15,4 +14,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
