@@ -338,6 +338,7 @@ export type BlockContent = Array<{
 }>;
 
 export type Category = {
+  productCount: any;
   _id: string;
   _type: "category";
   _createdAt: string;
