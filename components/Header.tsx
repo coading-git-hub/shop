@@ -35,22 +35,20 @@ const Header = async () => {
           <SearchBar />
           <CartIcon />
           <FavoriteButton />
-          {user && (
-            <Link
-              href={"/orders"}
-              className="group relative hover:text-shop_light_green hoverEffect flex-shrink-0"
-            >
-              <Logs className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 bg-shop_btn_dark_green text-white h-3.5 w-3.5 rounded-full text-xs font-semibold flex items-center justify-center">
-                {orders?.length ? orders?.length : 0}
-              </span>
-            </Link>
-          )}
           <ClerkLoaded>
             <SignedIn>
+              <Link
+                href={"/orders"}
+                className="group relative hover:text-shop_light_green hoverEffect flex-shrink-0"
+              >
+                <Logs className="w-5 h-5" />
+                <span className="absolute -top-1 -right-1 bg-shop_btn_dark_green text-white h-3.5 w-3.5 rounded-full text-xs font-semibold flex items-center justify-center">
+                  {orders?.length ? orders?.length : 0}
+                </span>
+              </Link>
               <UserButton />
             </SignedIn>
-            {!user && <SignIn />}
+            <SignIn />
           </ClerkLoaded>
         </div>
       </Container>
